@@ -1,14 +1,16 @@
 import sys
 import os
+from nltk import PorterStemmer
+import pandas as pd
 
 
 class EmailCollector:
     SPAM_CODE = 0
     HAM_CODE = 1
     START_POINT = 1
-    NUMBER_OF_FOLDERS = 3
+    NUMBER_OF_FOLDERS = 2
 
-    def __init__(self,file_name):
+    def __init__(self, file_name):
         self.file_name = file_name
         self.training_set = []
         self.invalid_files_number = 0
@@ -31,19 +33,24 @@ class EmailCollector:
             for spam_file in spam_file_list:
                 try:
                     file_name = current_dir + str(i) + "/spam/" + spam_file
-                    self.training_set.append({"emailContent": EmailCollector.get_file_contents(file_name), "class": EmailCollector.SPAM_CODE})
+                    file_content = EmailCollector.get_file_contents(file_name)
+                    self.training_set.append({"emailContent": file_content,
+                                              "class": EmailCollector.SPAM_CODE})
                 except UnicodeDecodeError:
                     self.invalid_files_number += 1
             for ham_file in ham_file_list:
                 try:
                     file_name = current_dir + str(i) + "/ham/" + ham_file
-                    self.training_set.append({"emailContent": EmailCollector.get_file_contents(file_name), "class": EmailCollector.HAM_CODE})
+                    file_content = EmailCollector.get_file_contents(file_name)
+                    self.training_set.append({"emailContent": file_content,
+                                              "class": EmailCollector.HAM_CODE})
                 except UnicodeDecodeError:
                     self.invalid_files_number += 1
-        return self.training_set
+        return pd.DataFrame(self.training_set)
 
 
 if __name__ == "__main__":
-    e = EmailCollector("enron")
+    stemmer = PorterStemmer()
+    e = EmailCollector("enron", stemmer)
     t = e.get_email_data("./data")
-    print(len(t))
+    print(len(t[1]))
