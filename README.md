@@ -1,21 +1,21 @@
 # comp723-text-mining
 
-##Abstract
+## Abstract
 
-##Introduction
+## Introduction
 
 
 
-##Methods
+## Methods
 
-##Results
+## Results
 
-##Discussion
+## Discussion
 
-##Conclusion
+## Conclusion
 
-##Acknowledgements
+## Acknowledgements
 
-##References
+## References
 
-##Appendix
+## Appendix
