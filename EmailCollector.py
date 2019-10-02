@@ -10,10 +10,11 @@ class EmailCollector:
     START_POINT = 1
     NUMBER_OF_FOLDERS = 2
 
-    def __init__(self, file_name):
+    def __init__(self, file_name, file_numbers):
         self.file_name = file_name
         self.training_set = []
         self.invalid_files_number = 0
+        self.file_numbers = file_numbers
 
     @staticmethod
     def get_file_contents(file_name):
@@ -26,7 +27,7 @@ class EmailCollector:
 
     def get_email_data(self, data_dir):
 
-        for i in range(EmailCollector.START_POINT, EmailCollector.NUMBER_OF_FOLDERS + 1):
+        for i in self.file_numbers:
             current_dir = data_dir + "/" + self.file_name
             ham_file_list = EmailCollector.get_files_in_path(current_dir + str(i) + "/ham")
             spam_file_list = EmailCollector.get_files_in_path(current_dir + str(i) + "/spam")
