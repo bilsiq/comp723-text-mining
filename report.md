@@ -47,6 +47,30 @@ Below are the pre-processing step we took to get the data ready for our models t
 4. Removing punctuations
 5. Tokenization of the emails  
 
+1. Adding labels
+
+    This is the first step in our data preparation and arguably the most important one as well. 
+This step in vital because, in our approach we had done unsupervised learning. 
+In unsupervised learning the presence on labels on each record is important. 
+So, that the model can be correctly trained.
+
+2. Stemming
+    
+    Stemming is done in order to normalize textual data. 
+    It also helps in reducing the number of words in the corpus. 
+    Which in-turn helps machine learning algorithms to perform better.
+
+3. Removing stop words & punctuations
+
+    Stop words are words in sentences which do not add any additional meaning to the sentence. 
+    So, therefore they can be removed from the corpus in our case. Furthermore, 
+    removing punctuation helps in tokenization of the corpus, which we will get into next. 
+    Removal of stop words and punctuations both results in decreasing the size of the corpus which 
+    in-turn yields greater performance in machine learning algorithms.
+
+4. Tokenization
+    
+    
 
 
 # Results
