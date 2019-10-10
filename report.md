@@ -43,23 +43,23 @@ Ham (legitimate) emails | 16544 | 50.121%
 ### Training set 
 
 The training data set contain 3 folders out of 5. The total number of records of 
-the training set is `21636` the folders used in the training set are enron1, enron3 and enron5
+the training set is `15865` the folders used in the training set are enron1, enron3 and enron5
 
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
-Spam emails | 15410 | 40.402%
-Ham (legitimate) emails | 9184 | 59.598% 
+Spam emails | 15410 | 42.10%
+Ham (legitimate) emails | 9187 | 57.90% 
 
 
 ### Testing set 
 
 The testing data set contain 2 folders out of 5. The total number of records of 
-the testing set is `27836` the folders used in the testing set are enron2 and, enron4
+the testing set is `17362` the folders used in the testing set are enron2 and, enron4
 
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
-Spam emails | 17598 | 58.177%
-Ham (legitimate) emails | 10238 | 41.833% 
+Spam emails | 10499 | 60.471%
+Ham (legitimate) emails | 7362 | 39.129% 
 
 # Methods
 

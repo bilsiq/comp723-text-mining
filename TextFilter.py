@@ -38,7 +38,7 @@ def clean_text(text):
 
 if __name__ == "__main__":
     s = "Hi my name is Zammel, and I am a runner I prefer running in wide areas."
-    e = EmailCollector("enron", [1, 3, 5])
+    e = EmailCollector("enron", [1])
     data = e.get_email_data("./data")
     count_vect = CountVectorizer(analyzer=clean_text)
     X = count_vect.fit_transform(data["emailContent"])
