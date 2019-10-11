@@ -73,7 +73,7 @@ The data is already separated into ham or spam folder respectfully.
  The first ham email dates back to 10-12-1999, last ham email dates back to 11-01-2002. 
  The first spam email dates back to 18-12-2003, last spam email dates back to 06-09-2005.
 
-Data preparation: 
+## Data preparation: 
 
 Below are the pre-processing step we took to get the data ready for our models to be trained on
 
@@ -81,37 +81,79 @@ Below are the pre-processing step we took to get the data ready for our models t
 2. Stemming the data
 3. Removing stop words
 4. Removing punctuations
-5. Tokenization of the emails  
+5. vec of the emails  
 
-1. Adding labels
 
-    This is the first step in our data preparation and arguably the most important one as well. 
-This step in vital because, in our approach we had done unsupervised learning. 
-In unsupervised learning the presence on labels on each record is important. 
-So, that the model can be correctly trained.
 
-2. Stemming
+
+### Adding labels
+To ensure that the dataset doesn't take a large space in the storage we 
+converted the labels to binary `(0 for spam, 1 for ham)`
+
+
+### Stemming
     
-    Stemming is done in order to normalize textual data. 
-    It also helps in reducing the number of words in the corpus. 
-    Which in-turn helps machine learning algorithms to perform better.
+Stemming is done in order to normalize textual data. 
+It also helps in reducing the number of words in the corpus. 
+Which in-turn helps machine learning algorithms to perform better.
 
-3. Removing stop words & punctuations
+### Removing stop words & punctuations
 
-    Stop words are words in sentences which do not add any additional meaning to the sentence. 
-    So, therefore they can be removed from the corpus in our case. Furthermore, 
-    removing punctuation helps in tokenization of the corpus, which we will get into next. 
-    Removal of stop words and punctuations both results in decreasing the size of the corpus which 
-    in-turn yields greater performance in machine learning algorithms.
+Stop words are words in sentences which do not add any additional meaning to the sentence. 
+So, therefore they can be removed from the corpus in our case. Furthermore, 
+removing punctuation helps in tokenization of the corpus, which we will get into next. 
+Removal of stop words and punctuations both results in decreasing the size of the corpus which 
+in-turn yields greater performance in machine learning algorithms.
 
-4. Tokenization
+### Vectorization
     
-    
+Since most machine learning models doesn't work with text directly we had 
+to convert the data set to a vector to be able to process it.
+We used ``TFIDF (Term Frequency Inverse Document Frequency)``
 
+```math
+TF = Number of time word appear in the document / Total number of word in document 
+```
+
+## Machine learning process :-
+ 
+ ### Feature selection
 
 # Results
 
 # Discussion
+
+## Computational power
+
+One of the main challenges we faced is not having 
+enough processing power to run the algorithms for vectorization.
+When we tried to run the vectorizing algorithms on our PCs we ended up getting 
+`out of memory` error (An error that occurs when there's a lack of RAM memory for the running script)
+
+
+###  Possible solutions 
+
+#### Adding more RAM (Random access memory)
+
+As discussed above the main problem we faced is not having enough RAM memory to carry out
+the process of vectorizing the dataset. Adding more RAM was a possible solution however 
+in our case this option wasn't feasible due to the uncertainty of the amount of the RAM we needed
+to run the algorithms efficiently.
+
+
+#### Reducing corpus size 
+
+The reason that the algorithm raises a memory error is 
+having a lot of documents to process. Hence reducing corpus size was a viable option to 
+make the algorithms run our PCs , however reducing the corpus size will have
+negative effects on the machine learning model accuracy.
+
+#### Process outsourcing
+
+This approach seems to be the most viable option. 
+In our case we used Azure cloud services, in order to run our algorithms.
+Since we have experience in managing servers. We took this approach, as
+our solutions to the main problem we came across with.
 
 # Conclusion
 

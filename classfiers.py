@@ -9,11 +9,11 @@ import numpy as np
 
 
 model = GaussianNB()
-data = pd.read_csv("test_1.csv")
+data = pd.read_csv("training_vectorized_data_set.csv")
 columns = data.columns.values
 test = pd.read_csv("test.csv")
 
-rfe = SelectKBest(score_func=chi2, k=60)
+rfe = SelectKBest(score_func=chi2, k=25)
 
 def get_accuracy(cm):
     true_positive, false_positive = cm[0]
