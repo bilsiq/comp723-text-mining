@@ -30,6 +30,9 @@ def feature_select(data):
 model = GaussianNB()
 data = pd.read_csv("test_1.csv")
 columns = data.columns.values
+for i in columns:
+    if data[i].values.sum() < 20:
+        del data[i]
 test = pd.read_csv("test_1.csv")
 
 rfe = SelectKBest(score_func=chi2, k=100)
