@@ -5,17 +5,23 @@ from sklearn import metrics
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.metrics import confusion_matrix
 from sklearn.naive_bayes import GaussianNB
-import numpy as np
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import LogisticRegression
+import numpy as np
 
 
+model = GaussianNB()
+data = pd.read_csv("test_1.csv")
+test = pd.read_csv("test_1.csv")
 def feature_select(data):
     columns = data.columns.values
     X,Y = data[columns[0:len(columns)-1]], data["email_label"]
     model = LogisticRegression()
     rfe = RFE(model, 30)
     fit = rfe.fit(X, Y)
+    print("Num Features: %s" % ( fit.n_features_))
+    print("Selected Features: %s" % (fit.support_))
+    print("Feature Ranking: %s" % (fit.ranking_))
     cols = []
     x = 0
     for col in columns:
@@ -26,14 +32,7 @@ def feature_select(data):
         except:
             print(x)
     return cols
-
-model = GaussianNB()
-data = pd.read_csv("test_1.csv")
-columns = data.columns.values
-test = pd.read_csv("test_1.csv")
-
-rfe = SelectKBest(score_func=chi2, k=100)
-
+print(feature_select(data))
 def get_accuracy(cm):
     true_positive, false_positive = cm[0]
     false_negative, true_negative = cm[1]
@@ -60,21 +59,9 @@ def get_recall(cm):
         result = 0.404
     return result
 
-new_features = feature_select(data)
-print(new_features)
-X=data[new_features]
-y=data['email_label']
-model.fit(X,y)
-for i in new_features[0:len(new_features)-1]:
-    try :
-        x = test[i]
-    except KeyError:
-        test[i] = np.zeros(len(test))
-
-y_pred=model.predict(test[new_features])
-cm = confusion_matrix(data["email_label"], y_pred)
-print(cm)
-
-print("Precision = ",get_precision(cm))
-print("recall = ",get_recall(cm))
-print("Accuracy = ",get_accuracy(cm))
+# cm = confusion_matrix(data["email_label"], y_pred)
+# print(cm)
+#
+# print("Precision = ",get_precision(cm))
+# print("recall = ",get_recall(cm))
+# print("Accuracy = ",get_accuracy(cm))
