@@ -4,7 +4,7 @@ comp723-text-mining
 Group member name | student id 
 ------------------|------------
 Yousef Aldawoud | 18038023
-Bilal Siddque |
+Bilal Siddque | 17956171
  
 # Abstract
 This project is a small illustration of modern text mining and tools, 
@@ -124,7 +124,6 @@ TF = Number of time word appear in the document / Total number of word in docume
 # Discussion
 
 ## Computational power
-
 One of the main challenges we faced is not having 
 enough processing power to run the algorithms for vectorization.
 When we tried to run the vectorizing algorithms on our PCs we ended up getting 
@@ -145,15 +144,15 @@ to run the algorithms efficiently.
 
 The reason that the algorithm raises a memory error is 
 having a lot of documents to process. Hence reducing corpus size was a viable option to 
-make the algorithms run our PCs , however reducing the corpus size will have
+make the algorithms run our PCs. However, reducing the corpus size will have
 negative effects on the machine learning model accuracy.
 
 #### Process outsourcing
 
-This approach seems to be the most viable option. 
-In our case we used Azure cloud services, in order to run our algorithms.
-Since we have experience in managing servers. We took this approach, as
-our solutions to the main problem we came across with.
+This approach seems to be the most viable option in our case. 
+We used Azure cloud services, in order to run our algorithms.
+Since we had experience in managing servers. We took this approach, as
+our solutions, to the main problem we came across with.
 
 # Conclusion
 
