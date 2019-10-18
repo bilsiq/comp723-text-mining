@@ -81,3 +81,4 @@ print(cm)
 print("Precision = ",get_precision(cm))
 print("recall = ",get_recall(cm))
 print("Accuracy = ",get_accuracy(cm))
+

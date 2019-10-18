@@ -34,7 +34,9 @@ Ham E-mails that mattered for the users.
 The data contains `33011` records in total. 
 3 mails were defective (includes characters that can't be processed)
 The emails were split into 5 files in no particular order.
+
 #### Data statistics of total data set
+
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
 Spam emails | 16464 | 49.879%
@@ -115,11 +117,39 @@ We used ``TFIDF (Term Frequency Inverse Document Frequency)``
 TF = Number of time word appear in the document / Total number of word in document 
 ```
 
-## Machine learning process :-
+### Machine learning process :-
  
- ### Feature selection
+#### Feature selection
+ 
+### Executing the Algorithms
+We had 2 sets of results which were generated using 2 different type of data slicing methods.
+the first method was:
+* Using a 30:70 testing:training set whilst maintaining the ham:spam ratio
+* Using enron1, enron3 & enron5 as training and enron2 & enron4 for testing
+
+By doing so we minimise any loss of accuracy which could occur when slicing the data set  
 
 # Results
+
+For the Results
+
+| task one  | Naive Bayes  | decision tree | NN  |   |
+|-----------|--------------|---------------|-----|---|
+| Accuracy  |     0.84375  |      0.9375   |     |   |
+| recall    |     0.66666  |      0.83334  |     |   |
+| Pricision |     1        |     1         |     |   |
+
+##30:70 split
+
+
+
+###Naive Bayes
+
+###Decision Tree
+
+###Neural Network
+
+
 
 # Discussion
 
