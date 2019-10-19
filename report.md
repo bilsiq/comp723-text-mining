@@ -31,7 +31,7 @@ The data provided is a set of E-mails that were enlisted to 2 groups
 Spam emails (Emails that were useless to the people who received it) and 
 Ham E-mails that mattered for the users.
 
-The data contains `33011` records in total. 
+The data contains `33,011` records in total. 
 3 mails were defective (includes characters that can't be processed)
 The emails were split into 5 files in no particular order.
 
@@ -78,8 +78,8 @@ the data sets.
 
 ####Method One 
 
-When preforming the 30:70 used 30 percent of the email as testing about `342` emails and 70% 
-of the emails about `3423` for training the each of the classifiers. 
+When preforming the 30:70 used 30 percent of the email as testing about `9,903` emails and 70% 
+of the emails about `23,108` for training the each of the classifiers. 
 almost a 50:50 ratio of ham:spam was maintained between the test and training set.
 
 ##### Training set 
@@ -88,8 +88,8 @@ text
 
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
-Spam emails |  | 
-Ham (legitimate) emails |  | 
+Spam emails | 11,554 | 50%|
+Ham (legitimate) emails | 11,554 | 50%
 
 
 ##### Testing set 
@@ -98,8 +98,8 @@ text
 
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
-Spam emails |  | 
-Ham (legitimate) emails |  |  
+Spam emails | 4,910 | 50.01%
+Ham (legitimate) emails | 4,900 |  49.99%
 
 ####Method Two 
 
@@ -108,12 +108,12 @@ Ham (legitimate) emails |  |
 ##### Training set 
 
 The training data set contain 3 folders out of 5. The total number of records of 
-the training set is `15865` the folders used in the training set are enron1, enron3 and enron5
+the training set is `15,865` the folders used in the training set are enron1, enron3 and enron5
 
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
-Spam emails | 15410 | 42.10%
-Ham (legitimate) emails | 9187 | 57.90% 
+Spam emails | 15,410 | 42.10%
+Ham (legitimate) emails | 9,187 | 57.90% 
 
 
 ##### Testing set 
@@ -123,8 +123,8 @@ the testing set is `17362` the folders used in the testing set are enron2 and, e
 
 Email type | number of records | percentage over all
 ---------|---------------------|--------------------
-Spam emails | 10499 | 60.471%
-Ham (legitimate) emails | 7362 | 39.129% 
+Spam emails | 10,499 | 60.47%
+Ham (legitimate) emails | 7,362 | 39.13% 
 
 ### Adding labels
 To ensure that the dataset doesn't take a large space in the storage we 
@@ -207,12 +207,6 @@ algorithms we ran.
 | Pricision |     1        |     1         |     |   |
 
 ##30:70 split
-
-When preforming the 30:70 used 30 percent of the email as testing about `342` emails 
-and 70% of the emails about `3423` for training the each of the classifiers.
-almost a 50:50 ratio of ham:spam was maintained between the test and training set.
-
-
 
 ###Naive Bayes
 
