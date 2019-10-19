@@ -42,26 +42,6 @@ Email type | number of records | percentage over all
 Spam emails | 16464 | 49.879%
 Ham (legitimate) emails | 16544 | 50.121% 
 
-### Training set 
-
-The training data set contain 3 folders out of 5. The total number of records of 
-the training set is `15865` the folders used in the training set are enron1, enron3 and enron5
-
-Email type | number of records | percentage over all
----------|---------------------|--------------------
-Spam emails | 15410 | 42.10%
-Ham (legitimate) emails | 9187 | 57.90% 
-
-
-### Testing set 
-
-The testing data set contain 2 folders out of 5. The total number of records of 
-the testing set is `17362` the folders used in the testing set are enron2 and, enron4
-
-Email type | number of records | percentage over all
----------|---------------------|--------------------
-Spam emails | 10499 | 60.471%
-Ham (legitimate) emails | 7362 | 39.129% 
 
 # Methods
 
@@ -79,14 +59,72 @@ The data is already separated into ham or spam folder respectfully.
 
 Below are the pre-processing step we took to get the data ready for our models to be trained on
 
-1. Adding labels to the emails respectfully (ham or spam)
-2. Stemming the data
-3. Removing stop words
-4. Removing punctuations
-5. vec of the emails  
+1. Splitting data into training and testing
+2. Adding labels to the emails respectfully (ham or spam)
+3. Stemming the data
+4. Removing stop words
+5. Removing punctuations
+6. Vectorization 
+
+### Splitting data into training and testing
+
+For spliting the data set we used 2 different type of data spliting methods. the 2 methods were:
+* Using a 30:70 testing:training set whilst maintaining the ham:spam ratio
+* Using enron1, enron3 & enron5 as training and enron2 & enron4 for testing
+
+
+We did this to ensure we can minimise any loss in accuracy. which could be caused by spliting
+the data sets.
+
+####Method One 
+
+When preforming the 30:70 used 30 percent of the email as testing about `342` emails and 70% 
+of the emails about `3423` for training the each of the classifiers. 
+almost a 50:50 ratio of ham:spam was maintained between the test and training set.
+
+##### Training set 
+
+text
+
+Email type | number of records | percentage over all
+---------|---------------------|--------------------
+Spam emails |  | 
+Ham (legitimate) emails |  | 
+
+
+##### Testing set 
+
+text
+
+Email type | number of records | percentage over all
+---------|---------------------|--------------------
+Spam emails |  | 
+Ham (legitimate) emails |  |  
+
+####Method Two 
 
 
 
+##### Training set 
+
+The training data set contain 3 folders out of 5. The total number of records of 
+the training set is `15865` the folders used in the training set are enron1, enron3 and enron5
+
+Email type | number of records | percentage over all
+---------|---------------------|--------------------
+Spam emails | 15410 | 42.10%
+Ham (legitimate) emails | 9187 | 57.90% 
+
+
+##### Testing set 
+
+The testing data set contain 2 folders out of 5. The total number of records of 
+the testing set is `17362` the folders used in the testing set are enron2 and, enron4
+
+Email type | number of records | percentage over all
+---------|---------------------|--------------------
+Spam emails | 10499 | 60.471%
+Ham (legitimate) emails | 7362 | 39.129% 
 
 ### Adding labels
 To ensure that the dataset doesn't take a large space in the storage we 
@@ -117,21 +155,50 @@ We used ``TFIDF (Term Frequency Inverse Document Frequency)``
 TF = Number of time word appear in the document / Total number of word in document 
 ```
 
-### Machine learning process :-
- 
-#### Feature selection
- 
-### Executing the Algorithms
-We had 2 sets of results which were generated using 2 different type of data slicing methods.
-the first method was:
-* Using a 30:70 testing:training set whilst maintaining the ham:spam ratio
-* Using enron1, enron3 & enron5 as training and enron2 & enron4 for testing
+### Machine learning process
 
-By doing so we minimise any loss of accuracy which could occur when slicing the data set  
+#### Algorithms
+
+We used 3 different types of algorithms, to level out the playing field in order to 
+create the model which best classifies the emails with the highest accuracy, precision & recall
+
+The three algorithms we used:
+* Naive Bayes
+* Decision Tree
+* Neural Network
+
+All of the algorithms were used from `sklearn` library in order to create the models.
+
+##### Naive Bayes
+
+The naive Bayes algorithm is one of the most powerful and commonly used algorithm in machine
+learning. this algorithms uses supervised leaning and classifies using the Bayes theorem reff.
+It is particularly easy to build and, one of the advantages of using Naive Bayes algorithm
+in our case, is that it works great of data sets which are large reffffff
+
+##### Decision Tree
+
+The decision Tree is another very commonly used algorithm used in machine learning.
+It uses a supervised approach which finds the best way to split the data set on different 
+conditions. 
+
+##### Neural Networks
+
+
+
+#### Feature selection
+
+ Feature selection is the process of choosing a subset of features from the original data set.
+ This effects the machine learning process in multiple ways, in consequence it also helps increase 
+ the accuracy of the models. It helps the machine learning process by, reducing the overall corpus
+ size, by decreasing the number of features the algorithm has to process. Making training and applying
+ new algorithms easier. Another way feature selection positively affects the machine learning process
+ is by getting rid of the feature which are noisy. Resulting in the algorithms preforming better.
 
 # Results
 
-For the Results
+Since we had split the data 2 different ways. We obtained 2 differnet set of results for the 
+algorithms we ran.
 
 | task one  | Naive Bayes  | decision tree | NN  |   |
 |-----------|--------------|---------------|-----|---|
@@ -140,6 +207,10 @@ For the Results
 | Pricision |     1        |     1         |     |   |
 
 ##30:70 split
+
+When preforming the 30:70 used 30 percent of the email as testing about `342` emails 
+and 70% of the emails about `3423` for training the each of the classifiers.
+almost a 50:50 ratio of ham:spam was maintained between the test and training set.
 
 
 
@@ -189,5 +260,7 @@ our solutions, to the main problem we came across with.
 # Acknowledgements
 
 # References
+
+
 
 # Appendix
