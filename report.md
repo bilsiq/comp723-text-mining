@@ -165,11 +165,9 @@ in-turn yields greater performance in machine learning algorithms.
     
 Since most machine learning models doesn't work with text directly we had 
 to convert the data set to a vector to be able to process it.
-We used ``TFIDF (Term Frequency Inverse Document Frequency)``
+We used ``count vectorization``
 
-```math
-TF = Number of time word appear in the document / Total number of word in document 
-```
+This will count the number of the times a certain word have appeard in a document. After that it makes it as a feature.
 
 ### Machine learning process
 
@@ -567,6 +565,7 @@ def feature_select(data):
 - get_accuracy method
 
 Takes confusion matrix as a parameter to calculate the accuracy. 
+
 ```python
 def get_accuracy(cm):
     true_positive, false_positive = cm[0]
@@ -626,18 +625,22 @@ model.fit(X,y)
 - Using the model to predict the test dataset
 
 Also creating a confusion matrix from the test data set and the model predicted values
+
 ```python
 y_pred=model.predict(test[columns[0:len(columns)-1]])
 cm = confusion_matrix(test["email_label"], y_pred)
 ```
 - printing out the accuracy ,recall and precision
+
 ```python
 print("Precision = ",get_precision(cm))
 print("recall = ",get_recall(cm))
 print("Accuracy = ",get_accuracy(cm))
 
 ```
+
 - Creating and training decision tree model: 
+
 ```python
 
 model = DecisionTreeClassifier()
