@@ -217,7 +217,7 @@ As discussed earlier, method one of splitting. Splits the data set into 30% for 
 
  When running the algorithms, we found that the decision tree algorithm out preformed both
  Naive Bayes and the MLP classifier. With an accuracy of 0.94, recall of 0.83 & 
- pricision of 0.94.
+ precision of 0.94.
 
 ###Summary
 
@@ -225,7 +225,7 @@ As discussed earlier, method one of splitting. Splits the data set into 30% for 
 |-----------|--------------|---------------|-----|
 | Accuracy  |     0.84375  |      0.9375   |  0.62444   | 
 | recall    |     0.66666  |      0.83334  |  0.523174   |
-| Pricision |     0.89        |     0.94         |  0.611357   | 
+| Precision |     0.89        |     0.94         |  0.611357   | 
 
 
 
@@ -247,14 +247,24 @@ method 1.
 |-----------|--------------|---------------|-----|
 | Accuracy  |    0.912489   |   0.92981      |  0.59484   |  
 | recall    |    0.76248   |    0.85614    | 0.51156    |  
-| Pricision |     0.90632        |     0.93845         | 0.57591   |
+| Precision |     0.90632        |     0.93845         | 0.57591   |
 
 
 # Discussion
 
-##
+## Explanation of Results
+In this study we mainly focused on building the best classifier to correctly classify emails
+as spam or ham (legitimate) emails. Looking at the problem, we wanted to create a classifier 
+that will have a very less likelihood of misclassify ham (legitimate) emails as spam. In 
+saying that, our main goal for finding the best classifier was having the best 
+precision metric.
 
-## Computational power
+In our case precision of the classifier was more significant of a metric than accuracy and 
+recall.
+
+best 
+
+## Computational power || Problems we Faced
 One of the main challenges we faced is not having 
 enough processing power to run the algorithms for vectorization.
 When we tried to run the vectorizing algorithms on our PCs we ended up getting 
@@ -290,7 +300,5 @@ our solutions, to the main problem we came across with.
 # Acknowledgements
 
 # References
-
-
 
 # Appendix
