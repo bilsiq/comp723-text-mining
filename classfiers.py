@@ -75,10 +75,21 @@ for i in new_features[0:len(new_features)-1]:
         test[i] = np.zeros(len(test))
 
 y_pred=model.predict(test[new_features])
-cm = confusion_matrix(data["email_label"], y_pred)
+cm = confusion_matrix(test["email_label"], y_pred)
 print(cm)
 
 print("Precision = ",get_precision(cm))
 print("recall = ",get_recall(cm))
 print("Accuracy = ",get_accuracy(cm))
 
+
+model = DecisionTreeClassifier()
+model.fit(X,y)
+print("Decision tree :-")
+y_pred=model.predict(test[new_features])
+cm = confusion_matrix(test["email_label"], y_pred)
+print(cm)
+
+print("Precision = ",get_precision(cm))
+print("recall = ",get_recall(cm))
+print("Accuracy = ",get_accuracy(cm))

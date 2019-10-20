@@ -97,7 +97,7 @@ for i in columns[0:len(columns)-1]:
 
 
 
-print("Naive bayes :-")
+print("Neural network :-")
 y_pred=model.predict(test[columns])
 cm = confusion_matrix(test["email_label"], y_pred)
 print(cm)
