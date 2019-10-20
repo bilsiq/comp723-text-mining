@@ -37,7 +37,7 @@ The emails were split into 5 files in no particular order.
 
 #### Data statistics of total data set
 
-Email type | number of records | percentage over all
+Email type | Number of records | Percentage over-all
 ---------|---------------------|--------------------
 Spam emails | 16464 | 49.879%
 Ham (legitimate) emails | 16544 | 50.121% 
@@ -262,7 +262,8 @@ precision metric.
 In our case precision of the classifier was more significant of a metric than accuracy and 
 recall.
 
-best 
+The best classifier we found was the decision tree classifier. Due to the fact, it scored the 
+highest results in both different data splitting methods.
 
 ## Computational power || Problems we Faced
 One of the main challenges we faced is not having 
