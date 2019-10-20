@@ -332,7 +332,8 @@ as a solution for this problem, due to it scoring the highest values in accuracy
 The code is seprated to different files and classes. Each class has a specific functionality.
 
 The code is available one [github](https://github.com/bilsiq/comp723-text-mining/)
- 
+
+github link :  [https://github.com/bilsiq/comp723-text-mining/](https://github.com/bilsiq/comp723-text-mining/)
 
 ## EmailCollector.py
 
