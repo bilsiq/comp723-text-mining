@@ -31,7 +31,7 @@ The data provided is a set of E-mails that were enlisted to 2 groups
 Spam emails (Emails that were useless to the people who received it) and 
 Ham E-mails that mattered for the users.
 
-The data contains `33,011` records in total. 
+The data contains `33,008` records in total. 
 3 mails were defective (includes characters that can't be processed)
 The emails were split into 5 files in no particular order.
 
@@ -84,9 +84,11 @@ almost a 50:50 ratio of ham:spam was maintained between the test and training se
 
 ##### Training set 
 
-text
+The training set was created by using 70% of the original data set. It had equal parts ham and
+spam emails, containing `11,554` of both ham and spam emails. Containing `23,108` 
+emails in total.
 
-Email type | number of records | percentage over all
+Email type | Number of records | Percentage over-all
 ---------|---------------------|--------------------
 Spam emails | 11,554 | 50%|
 Ham (legitimate) emails | 11,554 | 50%
@@ -94,9 +96,11 @@ Ham (legitimate) emails | 11,554 | 50%
 
 ##### Testing set 
 
-text
+The testing set was created by using 30% of the original data set. it had almost equal pasts
+ham and spam, containing `4,910` spam emails & `4,900` ham emails with a total emails of 
+`9,810`.
 
-Email type | number of records | percentage over all
+Email type | Number of records | Percentage over-all
 ---------|---------------------|--------------------
 Spam emails | 4,910 | 50.01%
 Ham (legitimate) emails | 4,900 |  49.99%
@@ -110,7 +114,7 @@ Ham (legitimate) emails | 4,900 |  49.99%
 The training data set contain 3 folders out of 5. The total number of records of 
 the training set is `15,865` the folders used in the training set are enron1, enron3 and enron5
 
-Email type | number of records | percentage over all
+Email type | Number of records | Percentage over-all
 ---------|---------------------|--------------------
 Spam emails | 15,410 | 42.10%
 Ham (legitimate) emails | 9,187 | 57.90% 
@@ -121,7 +125,7 @@ Ham (legitimate) emails | 9,187 | 57.90%
 The testing data set contain 2 folders out of 5. The total number of records of 
 the testing set is `17362` the folders used in the testing set are enron2 and, enron4
 
-Email type | number of records | percentage over all
+Email type | Number of records | Percentage over-all
 ---------|---------------------|--------------------
 Spam emails | 10,499 | 60.47%
 Ham (legitimate) emails | 7,362 | 39.13% 
@@ -174,7 +178,7 @@ All of the algorithms were used from `sklearn` library in order to create the mo
 The naive Bayes algorithm is one of the most powerful and commonly used algorithm in machine
 learning. this algorithms uses supervised leaning and classifies using the Bayes theorem reff.
 It is particularly easy to build and, one of the advantages of using Naive Bayes algorithm
-in our case, is that it works great of data sets which are large reffffff
+in our case, is that it works great of data sets which are large reffffff.
 
 ##### Decision Tree
 
@@ -184,7 +188,9 @@ conditions.
 
 ##### Neural Networks
 
-
+The specific type of neural network well be using is from the `sklearn` library call 
+`MLP` which is short for Multi-layer Perceptron. Has a minimum of three layers, which uses
+a supervised approach to classify.
 
 #### Feature selection
 
@@ -197,26 +203,56 @@ conditions.
 
 # Results
 
-Since we had split the data 2 different ways. We obtained 2 differnet set of results for the 
+Since we had split the data 2 different ways. We obtained 2 different set of results for the 
 algorithms we ran.
 
-| task one  | Naive Bayes  | decision tree | NN  |   |
-|-----------|--------------|---------------|-----|---|
-| Accuracy  |     0.84375  |      0.9375   |     |   |
-| recall    |     0.66666  |      0.83334  |     |   |
-| Pricision |     1        |     1         |     |   |
 
-##30:70 split
 
-###Naive Bayes
+##Splitting method One
 
-###Decision Tree
+As discussed earlier, method one of splitting. Splits the data set into 30% for testing and 
+70% for training.
 
-###Neural Network
+###Findings
 
+ When running the algorithms, we found that the decision tree algorithm out preformed both
+ Naive Bayes and the MLP classifier. With an accuracy of 0.94, recall of 0.83 & 
+ pricision of 0.94.
+
+###Summary
+
+| task one  | Naive Bayes  | Decision tree | NN  |
+|-----------|--------------|---------------|-----|
+| Accuracy  |     0.84375  |      0.9375   |  0.62444   | 
+| recall    |     0.66666  |      0.83334  |  0.523174   |
+| Pricision |     0.89        |     0.94         |  0.611357   | 
+
+
+
+##Splitting method Two
+
+As discused earlier, method two of splitting. splits the enron folder for training and testing.
+Enron1, enron3 & enron5 for training and enron2 & enron4 for testing.
+
+###Findings
+
+Similar finding were observed, when splitting the data set by method 2. The decision tree 
+classifier had still the best performance. However a significant increase in the Naive Bayes classifier
+was observed. On the other Hand, MLP classifier performed even worse than the performance in 
+method 1.
+
+###Summary
+
+| task two  | Naive Bayes  | Decision tree | NN  
+|-----------|--------------|---------------|-----|
+| Accuracy  |    0.912489   |   0.92981      |  0.59484   |  
+| recall    |    0.76248   |    0.85614    | 0.51156    |  
+| Pricision |     0.90632        |     0.93845         | 0.57591   |
 
 
 # Discussion
+
+##
 
 ## Computational power
 One of the main challenges we faced is not having 
