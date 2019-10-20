@@ -510,6 +510,19 @@ class TextCleaner:
         return self.text
 ```
 
+- main process:
+
+changing the dataset to vector and saving it to a `csv` file.
+
+```python
+if __name__ == "__main__":
+    count_vect = CountVectorizer(analyzer=clean_text)
+    X = count_vect.fit_transform(data["emailContent"])
+    X_data_frame = pd.DataFrame(X.toarray())
+    X_data_frame['email_label'] = data["class"]
+    X_data_frame.to_csv(r"./vectorized_data_set.csv")
+```
+
 ## classfiers.py
 
 - Importing necessary libraries:
