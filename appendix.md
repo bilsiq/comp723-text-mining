@@ -1,3 +1,12 @@
+---
+title: "Title"
+author: "Bilal and Yousef"
+date: "Date"
+documentclass: article
+geometry: margin=2cm
+classoption: a4paper
+---
+
 # Appendix
 
 The code is seprated to different files and classes. Each class has a specific functionality.
@@ -148,7 +157,8 @@ removes stop words
 class TextCleaner:
     ...
     def remove_stop_words(self):
-        filtered_words = [word for word in self.tokenize() if word not in stopwords.words('english')]
+        filtered_words = 
+            [word for word in self.tokenize() if word not in stopwords.words('english')]
         return TextCleaner(" ".join(filtered_words),self.stemmer)
 
 ```
@@ -224,7 +234,8 @@ Takes confusion matrix as a parameter to calculate the accuracy.
 def get_accuracy(cm):
     true_positive, false_positive = cm[0]
     false_negative, true_negative = cm[1]
-    result = (true_negative+true_positive)/(false_negative+false_positive+true_negative+true_positive)
+    x = (false_negative+false_positive+true_negative+true_positive)
+    result = (true_negative+true_positive)/x
     return result
 ```
 
