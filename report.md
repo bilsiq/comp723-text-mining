@@ -220,7 +220,7 @@ algorithms we ran.
 
 
 
-##Splitting method One
+## Splitting method One
 
 As discussed earlier, method one of splitting. Splits the data set into 30% for testing and 
 70% for training.
@@ -231,7 +231,7 @@ As discussed earlier, method one of splitting. Splits the data set into 30% for 
  Naive Bayes and the MLP classifier. With an accuracy of 0.94, recall of 0.83 & 
  precision of 0.94.
 
-###Summary
+### Summary
 
 | task one  | Naive Bayes  | Decision tree | NN  |
 |-----------|--------------|---------------|-----|
@@ -241,19 +241,19 @@ As discussed earlier, method one of splitting. Splits the data set into 30% for 
 
 
 
-##Splitting method Two
+## Splitting method Two
 
 As discused earlier, method two of splitting. splits the enron folder for training and testing.
 Enron1, enron3 & enron5 for training and enron2 & enron4 for testing.
 
-###Findings
+### Findings
 
 Similar finding were observed, when splitting the data set by method 2. The decision tree 
 classifier had still the best performance. However a significant increase in the Naive Bayes classifier
 was observed. On the other Hand, MLP classifier performed even worse than the performance in 
 method 1.
 
-###Summary
+### Summary
 
 | task two  | Naive Bayes  | Decision tree | NN  
 |-----------|--------------|---------------|-----|
