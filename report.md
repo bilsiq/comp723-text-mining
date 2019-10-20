@@ -21,21 +21,27 @@ Bilal Siddque | 17956171
 # Abstract
 This project is a small illustration of modern text mining and tools, 
 and how it is use these days. The projects takes an email data set that has a large number of spam emails.
-Our objective is to build a text mining (machine learning) model to classify spam emails from others.
+Our objective is to build a text mining (machine learning) model to classify spam emails from others. Using various 
+algorithms in the `sklearn` library in `python`. For example, Naive Bayes, Decision Tree and Multi-Layer Preceptron.
 
 
 # Introduction
 
-As the lkdrjejtj increases for example dvgfgdfg.
-Which generates all types of data. In this study we will be focusing on text mining. 
-Text mining is defined as “the process of analyzing natural language text to glean information 
-& patterns that are useful”. 
-Emailing is a very common way of communication used by both organisations and ind
-ery unstructured, which makes text mining challenging.
+In this study we will be using `python` to build models that classify spam emails and ham (legitimate) emails.
+This will be done by focusing on text mining & Natural Language Processing which python specialises in. 
+Text mining is defined as “Text mining is the process of exploring and analyzing large amounts of unstructured text data 
+aided by software that can identify concepts, patterns, topics, 
+keywords and other attributes in the data.” (Rouse, 2018). 
+Emailing is a very common and inexpensive way of communication which is very widely used.
+Emails being inexpensive and widely used, this inconvenience makes them 
+unstructured, which makes text mining emails challenging.
 
 In this study we will be training different types of models using different libraries in python particularly Natural Language Tool-Kit (NLTK) and Scikit-Learn. 
 These models are going to be trained on how to correctly identify legitimate emails from spam emails.
-The models we used to train and test the data are: fdhgdkjfhg dkf iofhsdklh dsoifhjkld
+The models/algorithms we used to train and test the data are: 
+- Naive Bayes 
+- Decision Tree  
+- Multi-Layer Preceptron
 
 ## Data description
 
@@ -61,11 +67,12 @@ Ham (legitimate) emails | 16544 | 50.121%
 
 The data was provided to us by Auckland University of technology. 
 The data is already separated into ham or spam folder respectfully.
- There are 5975 number of total email. 
- Number of ham emails are 3672 and the number of spam emails are 1500.
- the ratio of ham emails to spam emails is 1:3 (spam:ham). 
- The first ham email dates back to 10-12-1999, last ham email dates back to 11-01-2002. 
- The first spam email dates back to 18-12-2003, last spam email dates back to 06-09-2005.
+Here is a break down for one of the folder, all folders are identical in their structure.
+There are almost 5900 number of total email in each enron1 folder. 
+Number of ham emails are 3672 and the number of spam emails are 1500.
+The ratio of ham emails to spam emails is 1:3 (spam:ham). 
+The first ham email dates back to 10-12-1999, last ham email dates back to 11-01-2002. 
+The first spam email dates back to 18-12-2003, last spam email dates back to 06-09-2005.
 
 ## Data preparation: 
 
@@ -80,7 +87,7 @@ Below are the pre-processing step we took to get the data ready for our models t
 
 ### Splitting data into training and testing
 
-For spliting the data set we used 2 different type of data spliting methods. the 2 methods were:
+For splitting the data set we used 2 different type of data spliting methods. the 2 methods were:
 * Using a 30:70 testing:training set whilst maintaining the ham:spam ratio
 * Using enron1, enron3 & enron5 as training and enron2 & enron4 for testing
 
@@ -152,6 +159,7 @@ converted the labels to binary `(0 for spam, 1 for ham)`
 Stemming is done in order to normalize textual data. 
 It also helps in reducing the number of words in the corpus. 
 Which in-turn helps machine learning algorithms to perform better.
+The way stemming works is by removing the suffixes of each work, returning it to its root form (Rouse, 2018).
 
 ### Removing stop words & punctuations
 
@@ -186,9 +194,9 @@ All of the algorithms were used from `sklearn` library in order to create the mo
 ##### Naive Bayes
 
 The naive Bayes algorithm is one of the most powerful and commonly used algorithm in machine
-learning. this algorithms uses supervised leaning and classifies using the Bayes theorem reff.
+learning. this algorithms uses supervised leaning and classifies using the Bayes theorem (Gandhi, 2018).
 It is particularly easy to build and, one of the advantages of using Naive Bayes algorithm
-in our case, is that it works great of data sets which are large reffffff.
+in our case, is that it works great of data sets which are large.
 
 ##### Decision Tree
 
@@ -200,16 +208,16 @@ conditions.
 
 The specific type of neural network well be using is from the `sklearn` library call 
 `MLP` which is short for Multi-layer Perceptron. Has a minimum of three layers, which uses
-a supervised approach to classify.
+a supervised approach to classify (Nicholson).
 
 #### Feature selection
 
  Feature selection is the process of choosing a subset of features from the original data set.
  This effects the machine learning process in multiple ways, in consequence it also helps increase 
- the accuracy of the models. It helps the machine learning process by, reducing the overall corpus
+ the accuracy of the models (Paul, 2018). It helps the machine learning process by, reducing the overall corpus
  size, by decreasing the number of features the algorithm has to process. Making training and applying
- new algorithms easier. Another way feature selection positively affects the machine learning process
- is by getting rid of the feature which are noisy. Resulting in the algorithms preforming better.
+ new algorithms easier (Paul, 2018). Another way feature selection positively affects the machine learning process
+ is by getting rid of the feature which are noisy (Paul, 2018). Resulting in the algorithms preforming better.
 
 # Results
 
@@ -318,13 +326,27 @@ as a solution for this problem, due to it scoring the highest values in accuracy
 
 # Acknowledgements
 
+- https://scikit-learn.org/
+
 # References
 
-- https://scikit-learn.org/
-- https://www.datacamp.com/community/tutorials/feature-selection-python
-- https://link-springer-com.ezproxy.aut.ac.nz/content/pdf/10.1007%2Fs00521-017-3100-y.pdf
-- 
 
+
+>Rouse, M. (2018, May). What is text mining (text analytics)? - 
+Definition from WhatIs.com. Retrieved October 21, 2019, 
+from https://searchbusinessanalytics.techtarget.com/definition/text-mining.
+    
+>Rouse, M. (2018, January). What is stemming? - Definition from WhatIs.com. Retrieved October 21, 2019, 
+from https://searchenterpriseai.techtarget.com/definition/stemming.
+    
+>Gandhi, R. (2018, May 17). Naive Bayes Classifier. Retrieved October 21, 2019, 
+from https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c.
+
+>Nicholson, C. (n.d.). A Beginner's Guide to Multilayer Perceptrons (MLP). Retrieved October 21, 2019, 
+from https://skymind.ai/wiki/multilayer-perceptron.
+    
+>Paul, S. (2018, September 26). Beginner's Guide to Feature Selection in Python. 
+Retrieved from https://www.datacamp.com/community/tutorials/feature-selection-python.
 
 # Appendix
 
