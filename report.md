@@ -20,7 +20,8 @@ Bilal Siddque | 17956171
 
 # Abstract
 This project is a small illustration of modern text mining and tools, 
-and how it is use these days. The projects takes an email data set that has a large number of spam emails.
+and how it is use these days. The projects takes an email data set that has a large number of spam
+ and ham (legitimate) emails.
 Our objective is to build a text mining (machine learning) model to classify spam emails from others. Using various 
 algorithms in the `sklearn` library in `python`. For example, Naive Bayes, Decision Tree and Multi-Layer Preceptron.
 
@@ -38,7 +39,8 @@ unstructured, which makes text mining emails challenging.
 
 In this study we will be training different types of models using different libraries in python particularly Natural Language Tool-Kit (NLTK) and Scikit-Learn. 
 These models are going to be trained on how to correctly identify ham (legitimate) emails from spam emails.
-The models/algorithms we used to train and test the data are: 
+The models/algorithms we used to train and test the data are:
+ 
 - Naive Bayes 
 - Decision Tree  
 - Multi-Layer Preceptron
@@ -185,6 +187,7 @@ We used 3 different types of algorithms, to level out the playing field in order
 create the model which best classifies the emails with the highest accuracy, precision & recall
 
 The three algorithms we used:
+
 - Naive Bayes
 - Decision Tree
 - Neural Network
@@ -206,8 +209,8 @@ conditions.
 
 ##### Neural Networks
 
-The specific type of neural network well be using is from the `sklearn` library call 
-`MLP` which is short for Multi-layer Perceptron. Has a minimum of three layers, which uses
+The specific type of neural network well be using is from the `sklearn` library called 
+`MLP` which is short for Multi-layer Perceptron. Has a minimum of three layers, which also uses
 a supervised approach to classify (Nicholson).
 
 #### Feature selection
@@ -217,7 +220,7 @@ a supervised approach to classify (Nicholson).
  the accuracy of the models (Paul, 2018). It helps the machine learning process by, reducing the overall corpus
  size, by decreasing the number of features the algorithm has to process. Making training and applying
  new algorithms easier (Paul, 2018). Another way feature selection positively affects the machine learning process
- is by getting rid of the feature which are noisy (Paul, 2018). Resulting in the algorithms preforming better.
+ is by getting rid of the features which are noisy (Paul, 2018). Resulting in the algorithms preforming better.
 
 # Results
 
@@ -273,12 +276,13 @@ method 1.
 ## Explanation of Results
 In this study we mainly focused on building the best classifier to correctly classify emails
 as spam or ham (legitimate) emails. Looking at the problem, we wanted to create a classifier 
-that will have a very less likelihood of misclassify ham (legitimate) emails as spam. In 
-saying that, our main goal for finding the best classifier was having the best 
+that will have a very less likelihood of misclassifying  ham (legitimate) emails as spam. In 
+saying that, our main goal for finding the best classifier was having the highest 
 precision metric.
 
 In our case precision of the classifier was more significant of a metric than accuracy and 
-recall.
+recall. The reason we chose to focus on getting a high precision is because, in the case of 
+misclassifying an email to be ham instead of spam it wont risk putting ham email into spam folder
 
 The best classifier we found was the decision tree classifier with method one of splitting. 
 Due to the fact, it scored the 
@@ -287,11 +291,11 @@ highest results in both different data splitting methods.
 ## Effects of using different data sets
 
 We found that slicing the data set into different portions did not have much effect on the results we
-obtained after we ran the algorithms ecstatically on Decision tree and MLP-Classifier. 
+obtained after we ran the algorithms on Decision tree and MLP-Classifier. 
 However, we did notice an increase on the Naive Bayes classifier when splitting it the 2nd 
 method.
 
-## Problems we Faced
+## Problems we faced
 One of the main challenges we faced is not having 
 enough processing power to run the algorithms for vectorization.
 When we tried to run the vectorizing algorithms on our PCs we ended up getting 
@@ -324,7 +328,10 @@ our solutions, to the main problem we came across with.
 
 # Conclusion
 
-As we have gone through the whole process of a creating intelgent systems out of data, we have a clear understanding of how data mining and text processing works. When doing this assignment our main goal is to create a machine learning model that can classify emails to spam and legit emails.
+As we have gone through the whole process of a creating intelgent systems out of data,
+we have a clear understanding of how data mining and text processing works.
+When doing this report our main goal is to create a machine learning model that 
+can classify emails to spam and legit emails.
 
 We were able to train three different models (Naive bayes, Decision tree, Neural network)
 on the dataset provided using Microsoft Azure servers and we found that decision tree was the best classifier
@@ -334,10 +341,8 @@ as a solution for this problem, due to it scoring the highest values in accuracy
 
 # Acknowledgements
 
-- https://scikit-learn.org/
-
 We would like to express our special thanks and gratitude to our lecture Parma Nand and
-to our lab assistant for helping us. We really enjoyed working on this project, it also helped
+to our lab assistant Vinita Gangaram for helping us. We really enjoyed working on this project, it also helped
 us to learn more about text mining. Some of the resources we used to work on this project was the 
 official documentation of the `python` modules & and the official documents on `scikit learn`.
 

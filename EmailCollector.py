@@ -7,8 +7,8 @@ import pandas as pd
 class EmailCollector:
     SPAM_CODE = 0
     HAM_CODE = 1
-    START_POINT = 1
-    NUMBER_OF_FOLDERS = 2
+    START_POINT = 2
+    NUMBER_OF_FOLDERS = 3
 
     def __init__(self, file_name, file_numbers):
         self.file_name = file_name
