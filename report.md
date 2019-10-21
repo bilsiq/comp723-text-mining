@@ -280,10 +280,18 @@ precision metric.
 In our case precision of the classifier was more significant of a metric than accuracy and 
 recall.
 
-The best classifier we found was the decision tree classifier. Due to the fact, it scored the 
+The best classifier we found was the decision tree classifier with method one of splitting. 
+Due to the fact, it scored the 
 highest results in both different data splitting methods.
 
-## Computational power || Problems we Faced
+## Effects of using different data sets
+
+We found that slicing the data set into different portions did not have much effect on the results we
+obtained after we ran the algorithms ecstatically on Decision tree and MLP-Classifier. 
+However, we did notice an increase on the Naive Bayes classifier when splitting it the 2nd 
+method.
+
+## Problems we Faced
 One of the main challenges we faced is not having 
 enough processing power to run the algorithms for vectorization.
 When we tried to run the vectorizing algorithms on our PCs we ended up getting 
@@ -328,11 +336,17 @@ as a solution for this problem, due to it scoring the highest values in accuracy
 
 - https://scikit-learn.org/
 
+We would like to express our special thanks and gratitude to our lecture Parma Nand and
+to our lab assistant for helping us. We really enjoyed working on this project, it also helped
+us to learn more about text mining. Some of the resources we used to work on this project was the 
+official documentation of the `python` modules & and the official documents on `scikit learn`.
+
+
 # References
 
 
 
->Rouse, M. (2018, May). What is text mining (text analytics)? - 
+Rouse, M. (2018, May). What is text mining (text analytics)? - 
 Definition from WhatIs.com. Retrieved October 21, 2019, 
 from https://searchbusinessanalytics.techtarget.com/definition/text-mining.
     
