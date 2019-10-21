@@ -11,7 +11,7 @@ header-includes:
 
 ![](l.png)
 
-Group member name | student id 
+Group member name | Student ID 
 ------------------|------------
 Yousef Aldawoud | 18038023
 Bilal Siddique | 17956171
