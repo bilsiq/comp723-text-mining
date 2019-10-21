@@ -355,16 +355,20 @@ Rouse, M. (2018, May). What is text mining (text analytics)? -
 Definition from WhatIs.com. Retrieved October 21, 2019, 
 from https://searchbusinessanalytics.techtarget.com/definition/text-mining.
     
->Rouse, M. (2018, January). What is stemming? - Definition from WhatIs.com. Retrieved October 21, 2019, 
+
+Rouse, M. (2018, January). What is stemming? - Definition from WhatIs.com. Retrieved October 21, 2019, 
 from https://searchenterpriseai.techtarget.com/definition/stemming.
     
->Gandhi, R. (2018, May 17). Naive Bayes Classifier. Retrieved October 21, 2019, 
+
+Gandhi, R. (2018, May 17). Naive Bayes Classifier. Retrieved October 21, 2019, 
 from https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c.
 
->Nicholson, C. (n.d.). A Beginner's Guide to Multilayer Perceptrons (MLP). Retrieved October 21, 2019, 
+
+Nicholson, C. (n.d.). A Beginner's Guide to Multilayer Perceptrons (MLP). Retrieved October 21, 2019, 
 from https://skymind.ai/wiki/multilayer-perceptron.
-    
->Paul, S. (2018, September 26). Beginner's Guide to Feature Selection in Python. 
+
+
+Paul, S. (2018, September 26). Beginner's Guide to Feature Selection in Python. 
 Retrieved from https://www.datacamp.com/community/tutorials/feature-selection-python.
 
 # Appendix
