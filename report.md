@@ -37,7 +37,7 @@ Emails being inexpensive and widely used, this inconvenience makes them
 unstructured, which makes text mining emails challenging.
 
 In this study we will be training different types of models using different libraries in python particularly Natural Language Tool-Kit (NLTK) and Scikit-Learn. 
-These models are going to be trained on how to correctly identify legitimate emails from spam emails.
+These models are going to be trained on how to correctly identify ham (legitimate) emails from spam emails.
 The models/algorithms we used to train and test the data are: 
 - Naive Bayes 
 - Decision Tree  
