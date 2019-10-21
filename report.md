@@ -20,10 +20,21 @@ Bilal Siddique | 17956171
 
 # Contributions
 
-Group member name | Responsibility  
-------------------|------------
-Yousef Aldawoud | <ul> <li>Collecting emails </li> <li>Slicing data by files</li> <li>Microsoft Azure Management</li>  <li>Building models</li> <li>Report writing</li> </ul> 
-Bilal Siddique |  <ul> <li>Pre Processing</li> <li>Slicing data by percentage</li> <li>Server Management</li> <li>Building models</li> <li>Report writing</li> </ul> 
+
++-------------------+------------------------------+
+| Group member name | Responsibility               |
++===================+==============================+
+| Yousef Aldawoud   | - Collecting emails          |
+|                   | - Slicing data by files      |
+|                   | - Microsoft Azure Management |
+|                   | - building models            |
+|                   | - Report writing             |
++-------------------+------------------------------+
+| Bilal Siddique    | - Server Management          |
+|                   | - Slicing data by percentage |
+|                   | - Building models            |
+|                   | - Report writing             |
++-------------------+------------------------------+
 
 # Abstract
 This project is a small illustration of modern text mining and tools, 
