@@ -78,8 +78,8 @@ Ham (legitimate) emails | 16544 | 50.121%
 The data was provided to us by Auckland University of technology. 
 The data is already separated into ham or spam folder respectfully.
 Here is a break down for one of the folder, all folders are identical in their structure.
-There are almost 5900 number of total email in each enron1 folder. 
-Number of ham emails are 3672 and the number of spam emails are 1500.
+There are almost `5900` number of total email in each enron1 folder. 
+Number of ham emails are `3672` and the number of spam emails are `1500`.
 The ratio of ham emails to spam emails is 1:3 (spam:ham). 
 The first ham email dates back to 10-12-1999, last ham email dates back to 11-01-2002. 
 The first spam email dates back to 18-12-2003, last spam email dates back to 06-09-2005.
@@ -97,7 +97,7 @@ Below are the pre-processing step we took to get the data ready for our models t
 
 ### Splitting data into training and testing
 
-For splitting the data set we used 2 different type of data spliting methods. the 2 methods were:
+For splitting the data set we used 2 different type of data splitting methods. the 2 methods were:
 * Using a 30:70 testing:training set whilst maintaining the ham:spam ratio
 * Using enron1, enron3 & enron5 as training and enron2 & enron4 for testing
 
@@ -175,7 +175,7 @@ The way stemming works is by removing the suffixes of each work, returning it to
 
 Stop words are words in sentences which do not add any additional meaning to the sentence. 
 So, therefore they can be removed from the corpus in our case. Furthermore, 
-removing punctuation helps in tokenization of the corpus, which we will get into next. 
+removing punctuation helps in tokenizing of the corpus, which we will get into next. 
 Removal of stop words and punctuations both results in decreasing the size of the corpus which 
 in-turn yields greater performance in machine learning algorithms.
 
@@ -183,9 +183,9 @@ in-turn yields greater performance in machine learning algorithms.
     
 Since most machine learning models doesn't work with text directly we had 
 to convert the data set to a vector to be able to process it.
-We used ``count vectorization``
+We used `count vectorization`
 
-This will count the number of the times a certain word have appeard in a document. After that it makes it as a feature.
+This will count the number of the times a certain word have appeared in a document. After that it makes it as a feature.
 
 ### Machine learning process
 
@@ -244,9 +244,9 @@ As discussed earlier, method one of splitting. Splits the data set into 30% for 
 
 ### Findings
 
- When running the algorithms, we found that the decision tree algorithm out preformed both
- Naive Bayes and the MLP classifier. With an accuracy of 0.94, recall of 0.83 & 
- precision of 0.94.
+When running the algorithms, we found that the decision tree algorithm out preformed both
+Naive Bayes and the MLP classifier. With an accuracy of `0.94`, recall of `0.83` & 
+precision of `0.94`.
 
 ### Summary
 
@@ -260,7 +260,7 @@ As discussed earlier, method one of splitting. Splits the data set into 30% for 
 
 ## Splitting method Two
 
-As discused earlier, method two of splitting. splits the enron folder for training and testing.
+As discussed earlier, method two of splitting. splits the enron folder for training and testing.
 Enron1, enron3 & enron5 for training and enron2 & enron4 for testing.
 
 ### Findings
@@ -315,7 +315,7 @@ When we tried to run the vectorizing algorithms on our PCs we ended up getting
 #### Adding more RAM (Random access memory)
 
 As discussed above the main problem we faced is not having enough RAM memory to carry out
-the process of vectorizing the dataset. Adding more RAM was a possible solution however 
+the process of vectorizing the data-set. Adding more RAM was a possible solution however 
 in our case this option wasn't feasible due to the uncertainty of the amount of the RAM we needed
 to run the algorithms efficiently.
 
@@ -342,7 +342,7 @@ When doing this report our main goal is to create a machine learning model that
 can classify emails to spam and legit emails.
 
 We were able to train three different models (Naive bayes, Decision tree, Neural network)
-on the dataset provided using Microsoft Azure servers and we found that decision tree was the best classifier
+on the data-set provided using Microsoft Azure servers and we found that decision tree was the best classifier
 as a solution for this problem, due to it scoring the highest values in accuracy and precision. 
 
 
