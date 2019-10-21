@@ -14,9 +14,16 @@ header-includes:
 Group member name | student id 
 ------------------|------------
 Yousef Aldawoud | 18038023
-Bilal Siddque | 17956171
+Bilal Siddique | 17956171
 
 \newpage
+
+# Contributions
+
+Group member name | Responsibility  
+------------------|------------
+Yousef Aldawoud | <ul> <li>Collecting emails </li> <li>Slicing data by files</li> <li>Microsoft Azure Management</li>  <li>Building models</li> <li>Report writing</li> </ul> 
+Bilal Siddique |  <ul> <li>Pre Processing</li> <li>Slicing data by percentage</li> <li>Server Management</li> <li>Building models</li> <li>Report writing</li> </ul> 
 
 # Abstract
 This project is a small illustration of modern text mining and tools, 
@@ -24,6 +31,7 @@ and how it is use these days. The projects takes an email data set that has a la
  and ham (legitimate) emails.
 Our objective is to build a text mining (machine learning) model to classify spam emails from others. Using various 
 algorithms in the `sklearn` library in `python`. For example, Naive Bayes, Decision Tree and Multi-Layer Preceptron.
+
 
 
 # Introduction
@@ -350,16 +358,6 @@ official documentation of the `python` modules & and the official documents on `
 # References
 
 
-
-Rouse, M. (2018, May). What is text mining (text analytics)? - 
-Definition from WhatIs.com. Retrieved October 21, 2019, 
-from https://searchbusinessanalytics.techtarget.com/definition/text-mining.
-    
-
-Rouse, M. (2018, January). What is stemming? - Definition from WhatIs.com. Retrieved October 21, 2019, 
-from https://searchenterpriseai.techtarget.com/definition/stemming.
-    
-
 Gandhi, R. (2018, May 17). Naive Bayes Classifier. Retrieved October 21, 2019, 
 from https://towardsdatascience.com/naive-bayes-classifier-81d512f50a7c.
 
@@ -371,9 +369,19 @@ from https://skymind.ai/wiki/multilayer-perceptron.
 Paul, S. (2018, September 26). Beginner's Guide to Feature Selection in Python. 
 Retrieved from https://www.datacamp.com/community/tutorials/feature-selection-python.
 
+
+Rouse, M. (2018, May). What is text mining (text analytics)? - 
+Definition from WhatIs.com. Retrieved October 21, 2019, 
+from https://searchbusinessanalytics.techtarget.com/definition/text-mining.
+    
+
+Rouse, M. (2018, January). What is stemming? - Definition from WhatIs.com. Retrieved October 21, 2019, 
+from https://searchenterpriseai.techtarget.com/definition/stemming.
+    
+    
 # Appendix
 
-The code is seprated to different files and classes. Each class has a specific functionality.
+The code is separated to different files and classes. Each class has a specific functionality.
 
 The code is available one [github](https://github.com/bilsiq/comp723-text-mining/)
 
