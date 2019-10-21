@@ -1,5 +1,5 @@
 ---
-title: "comp723-text-mining"
+title: "COMP723-text-mining"
 geometry: margin=1.8cm
 classoption: a4paper
 output: 
@@ -33,6 +33,7 @@ Bilal Siddique | 17956171
 | Bilal Siddique    | - Server Management          |
 |                   | - Slicing data by percentage |
 |                   | - Building models            |
+|                   | - Pre Processing             |
 |                   | - Report writing             |
 +-------------------+------------------------------+
 
