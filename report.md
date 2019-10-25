@@ -391,13 +391,29 @@ from https://searchbusinessanalytics.techtarget.com/definition/text-mining.
 
 Rouse, M. (2018, January). What is stemming? - Definition from WhatIs.com. Retrieved October 21, 2019, 
 from https://searchenterpriseai.techtarget.com/definition/stemming.
+
+# Reflection
+
+Doing this report has been a wonderful experience for both of us, we faced with
+multiple challenges along the way. However, these challenges helped us to thinking about the
+problem more critically and come up with solutions.
+
+In hindsight if we were to take part in the report again or do a similar project we 
+would so a few things a bit differently. For example, try different type of vectorisation 
+methods, like `GloVe` and `word2vec` and see if the performance of the algorithms are affected. 
+Furthermore, another way we would experiment differently is by doing
+at least 2 more different type of algorithms, for example, `K-Nearest Neighbors` and `Random 
+forest`. Since the decision tree performed the best out of the all the algorithms, so it'll 
+be interesting to see how `Random forest` will perform.
+
+
     
     
 # Appendix
 
 The code is separated to different files and classes. Each class has a specific functionality.
 
-The code is available one [github](https://github.com/bilsiq/comp723-text-mining/)
+The code is available on [github](https://github.com/bilsiq/comp723-text-mining/)
 
 github link :  [https://github.com/bilsiq/comp723-text-mining/](https://github.com/bilsiq/comp723-text-mining/)
 
